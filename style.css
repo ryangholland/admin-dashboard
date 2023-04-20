@@ -51,7 +51,16 @@ h6 {
 
 /* CSS Reset above, Custom Code below */
 
+:root {
+  --emerald-500: #10b981;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .main-container {
+  height: 100%;
   display: grid;
   grid-template: 200px 1fr / 300px 1fr;
   grid-template-areas:
@@ -59,14 +68,30 @@ h6 {
     "sidebar content";
 }
 
-.header {
-    grid-area: header;
+.sidebar {
+  grid-area: sidebar;
+  padding: 15px 30px;
+
+  background-color: var(--emerald-500);
+  color: white;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.sidebar-top,
+.sidebar-mid {
+  margin-bottom: 50px;
+}
+
+.sidebar-list-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header {
+  grid-area: header;
 }
 
 .content {
-    grid-area: content;
+  grid-area: content;
 }
