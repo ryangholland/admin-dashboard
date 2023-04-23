@@ -151,7 +151,7 @@ body {
   grid-area: content;
 
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 280px;
   gap: 25px;
 
   padding: 25px;
@@ -159,12 +159,12 @@ body {
 }
 
 .content h2 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .project-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
@@ -178,6 +178,8 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  border-left: solid 8px rgb(177, 135, 142);
 }
 
 .project-card p {
@@ -189,4 +191,33 @@ body {
   align-self: flex-end;
   margin-top: auto;
   gap: 20px;
+}
+
+.announcements-container,
+.trending-container {
+  background-color: white;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 2px gray;
+  margin-bottom: 20px;
+}
+
+.announcements-container p {
+  font-size: 0.8rem;
+}
+
+.announcements-container hr {
+  margin-block: 10px;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
