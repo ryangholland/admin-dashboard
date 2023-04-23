@@ -148,4 +148,7 @@ body {
 
 .content {
   grid-area: content;
+
+  display: grid;
+  grid-template-columns: 1fr 300px;
 }
