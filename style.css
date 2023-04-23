@@ -63,7 +63,7 @@ body {
 .main-container {
   height: 100%;
   display: grid;
-  grid-template: 200px 1fr / 300px 1fr;
+  grid-template: 175px 1fr / 300px 1fr;
   grid-template-areas:
     "sidebar header"
     "sidebar content";
