@@ -127,6 +127,7 @@ body {
 .header-user-info {
   justify-content: flex-end;
   padding-right: 25px;
+  gap: 30px;
 }
 
 .header-buttons-container {
@@ -234,4 +235,14 @@ body {
 
 .big-icon {
   height: 40px;
+}
+
+.avatar {
+  height: 45px;
+  border-radius: 45px;
+}
+
+.big-avatar {
+  height: 70px;
+  border-radius: 70px;
 }
