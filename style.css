@@ -92,7 +92,7 @@ body {
 .header {
   grid-area: header;
   padding: 0px 30px;
-  
+
   display: grid;
   grid-template: 1fr 1.15fr / minmax(600px, 1fr) 450px;
 
@@ -155,7 +155,7 @@ body {
   gap: 25px;
 
   padding: 25px;
-  background-color: var(--emerald-50)
+  background-color: var(--emerald-50);
 }
 
 .content h2 {
@@ -220,4 +220,14 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.icon {
+  height: 25px;
+  filter: invert(99%) sepia(1%) saturate(270%) hue-rotate(110deg)
+    brightness(122%) contrast(100%);
+}
+
+.big-icon {
+  height: 40px;
 }
