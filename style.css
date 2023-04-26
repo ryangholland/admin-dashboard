@@ -54,6 +54,7 @@ h6 {
 :root {
   --emerald-500: #10b981;
   --emerald-50: #d1fae5;
+  --anti-color: rgb(177, 135, 142);
 }
 
 body {
@@ -180,7 +181,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  border-left: solid 8px rgb(177, 135, 142);
+  border-left: solid 8px var(--anti-color);
 }
 
 .project-card p {
@@ -252,5 +253,10 @@ body {
 h3:hover,
 .card-icons img {
   opacity: 0.7;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: var(--anti-color);
   cursor: pointer;
 }
